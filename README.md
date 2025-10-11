@@ -31,13 +31,10 @@ o	Buka dengan browser favorit Anda
 4.	Website siap digunakan!
 
 
-📁 Struktur File
-text
-TriyaskaFood/
-├── index.html          # Halaman utama website
-├── style.css           # Stylesheet untuk styling
-├── script.js           # JavaScript untuk interaktivitas
-└── README.md          # Dokumentasi ini
+<img width="511" height="188" alt="image" src="https://github.com/user-attachments/assets/d3b99ae5-cf70-4a7e-88a8-b7b7d1a530d3" />
+
+
+
 ✨ Fitur Website
 •	🎨 Design Modern - Interface yang elegan dan user-friendly
 •	📱 Responsive - Optimal di semua device (desktop, tablet, mobile)
