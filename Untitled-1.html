@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriyaskaFood  - Restoran Modern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-utensils"></i>
+                   TriyaskaFood
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#reservation">Reservasi</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Pengalaman Kuliner Tak Terlupakan</h1>
+                <p>Nikmati hidangan lezat yang dibuat dengan bahan-bahan terbaik dan resep warisan turun-temurun.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn">Lihat Menu</a>
+                    <a href="#reservation" class="btn btn-outline">Reservasi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>TriyaskaFood telah melayani hidangan istimewa sejak 2005 dengan komitmen terhadap kualitas dan cita rasa autentik.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80" alt="Restoran Interior">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Cerita Di Balik Kelezatan Kami</h3>
+                    <p>Didirikan oleh Chef Juna, TriyaskaFood berawal dari kecintaan terhadap masakan tradisional dengan sentuhan modern. Setiap hidangan dibuat dengan penuh perhatian terhadap detail dan menggunakan bahan-bahan segar pilihan.</p>
+                    <p>Kami percaya bahwa makanan bukan hanya tentang mengisi perut, tetapi juga tentang menciptakan kenangan dan pengalaman yang tak terlupakan.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Bahan Organik</h4>
+                                <p>Menggunakan bahan-bahan organik terbaik dari petani lokal.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Chef Berpengalaman</h4>
+                                <p>Dipimpin oleh chef dengan pengalaman lebih dari 15 tahun.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Dibuat dengan Cinta</h4>
+                                <p>Setiap hidangan dibuat dengan penuh passion dan dedikasi.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4>Ramah Lingkungan</h4>
+                                <p>Berkomitmen terhadap praktik berkelanjutan dan ramah lingkungan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Menu Spesial Kami</h2>
+                <p>Jelajahi berbagai pilihan hidangan lezat yang dibuat khusus untuk memanjakan lidah Anda.</p>
+            </div>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="appetizer">Hidangan Pembuka</button>
+                <button class="filter-btn" data-filter="main">Hidangan Utama</button>
+                <button class="filter-btn" data-filter="dessert">Pencuci Mulut</button>
+                <button class="filter-btn" data-filter="drink">Minuman</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Apa Kata Pelanggan</h2>
+                <p>Pengalaman nyata dari pelanggan yang telah menikmati hidangan kami.</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-track">
+                        <!-- Testimonial slides will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="slider-nav">
+                    <!-- Slider dots will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Reservasi Meja</h2>
+                <p>Pesan meja Anda sekarang dan nikmati pengalaman kuliner yang tak terlupakan.</p>
+            </div>
+            
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Nomor Telepon" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" disabled selected>Jumlah Tamu</option>
+                        <option value="1">1 Orang</option>
+                        <option value="2">2 Orang</option>
+                        <option value="3">3 Orang</option>
+                        <option value="4">4 Orang</option>
+                        <option value="5">5+ Orang</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <textarea class="form-control" placeholder="Pesan Khusus" rows="4"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit" class="btn">Pesan Sekarang</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>TriyaskaFood</h3>
+                    <p>Restoran dengan konsep modern yang menyajikan hidangan lezat dengan bahan-bahan terbaik dan pelayanan terbaik.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#testimonials">Testimoni</a></li>
+                        <li><a href="#reservation">Reservasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Kontak Kami</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Kampus Ketintang Gedung K4, Program Vokasi Jalan Raya ketintang, Kec Gayungan, Kota Surabaya (60231) </li>
+                        <li><i class="fas fa-phone"></i> +62 21 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@gourmetdelight.com</li>
+                        <li><i class="fas fa-clock"></i> Buka Setiap Hari: 10.00 - 22.00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anarus.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
