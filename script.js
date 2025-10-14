@@ -80,7 +80,7 @@ const testimonials = [
         id: 1,
         name: "Oyen Anjazz",
         text: "Pengalaman makan terbaik yang pernah saya rasakan! Salmon Truffle-nya luar biasa lezat. Pelayanan juga sangat ramah dan profesional.",
-        avatar: "3 img.jpg",
+        avatar: "kucing coding.jpeg",
         rating: 5
     },
     {
@@ -301,4 +301,5 @@ function setupEventListeners() {
     });
 
 }
+
 
