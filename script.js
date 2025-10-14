@@ -78,23 +78,23 @@ const menuItems = [
 const testimonials = [
     {
         id: 1,
-        name: "Sarah Johnson",
+        name: "Oyen Anjazz",
         text: "Pengalaman makan terbaik yang pernah saya rasakan! Salmon Truffle-nya luar biasa lezat. Pelayanan juga sangat ramah dan profesional.",
-        avatar: "https://randomuser.me/api/portraits/women/32.jpg",
+        avatar: "img 2.jpeg",
         rating: 5
     },
     {
         id: 2,
-        name: "Michael Chen",
+        name: "Oyen Gaul",
         text: "Wagyu steak-nya empuk dan penuh rasa. Tempat yang sempurna untuk acara spesial. Pasti akan kembali lagi!",
-        avatar: "https://randomuser.me/api/portraits/men/54.jpg",
+        avatar: "img 2.jpeg",
         rating: 5
     },
     {
         id: 3,
-        name: "Lisa Williams",
+        name: "Oyen Core",
         text: "Tiramisu-nya adalah yang terbaik yang pernah saya coba! Suasana restoran sangat nyaman dan romantis.",
-        avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+        avatar: "1 img.jpg",
         rating: 4
     }
 ];
@@ -299,4 +299,5 @@ function setupEventListeners() {
             }
         });
     });
+
 }
