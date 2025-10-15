@@ -685,7 +685,437 @@ Implementasi JavaScript pada Website TriyaskaFood menunjukkan penguasaan yang ko
 🔮 Future-Ready Architecture - Scalable dan extensible design
 
 
+Software Requirements Specification (SRS)
+# SRS TRIYASKAFOOD
 
+## Functional Requirements
+- FR1: Menu Display System
+- FR2: Reservation Booking
+- FR3: Testimonial Showcase
+
+## Non-Functional Requirements
+- NFR1: Performance (<2s load time)
+- NFR2: Responsive Design
+- NFR3: Browser Compatibility
+User Documentation
+•	User Guide: Cara menggunakan website bagi end-users
+•	Admin Guide: Petunjuk maintenance dan content updates
+•	Troubleshooting: Solusi untuk common issues
+Documentation Quality:
+📚 Completeness - Semua aspek terdokumentasi dengan baik
+📚 Clarity - Penjelasan mudah dipahami berbagai audience
+📚 Organization - Structured dan mudah di-navigate
+📚 Maintainability - Dokumentasi yang dapat di-update easily
+1.1 Tujuan
+Dokumen ini dibuat untuk merinci spesifikasi teknis dan fungsional website restoran "TriyaskaFood" yang akan dikembangkan sebagai platform digital untuk mempromosikan bisnis kuliner secara online.
+1.2 Ruang Lingkup
+Website ini merupakan aplikasi single-page yang mencakup beberapa fitur utama:
+1.	Menampilkan menu makanan dan minuman
+2.	Sistem reservasi meja online
+3.	Menampilkan testimonial pelanggan
+4.	Informasi kontak dan lokasi restoran
+5.	Desain yang responsif untuk semua perangkat
+1.3 Definisi Istilah
+1.	SPA: Aplikasi satu halaman yang bekerja secara dinamis
+2.	UI: Antarmuka pengguna
+3.	UX: Pengalaman pengguna
+4.	DOM: Model objek dokumen untuk memanipulasi halaman web
+5.	CSS: Bahasa stylesheet untuk mendesain halaman web
+2. DESKRIPSI UMUM
+2.1 Perspektif Produk
+Website ini merupakan sistem mandiri yang berjalan di browser web tanpa memerlukan server backend. Semua data disimpan dan diproses di sisi klien.
+2.2 Fungsi Produk
+<img width="636" height="428" alt="image" src="https://github.com/user-attachments/assets/950a993a-fdfe-4fca-bea0-c6ec6068f65c" />
+
+2.3 Karakteristik Pengguna
+Pengguna Utama:
+1.	Pelanggan restoran (usia 18-60 tahun)
+2.	Memiliki kemampuan dasar dalam menggunakan perangkat digital
+3.	Mengakses melalui mobile dan desktop
+Pengguna Sekunder:
+1.	Staf restoran (hanya melihat)
+2.	Manajemen (untuk monitoring)
+2.4 Batasan Pengembangan
+1.	Tidak menggunakan framework eksternal
+2.	Harus kompatibel dengan browser utama
+3.	Waktu loading maksimal 3 detik
+4.	Harus dapat diakses oleh screen reader
+
+
+
+3. REQUIREMENTS SPESIFIK
+3.1 Requirements Fungsional
+3.1.1 Sistem Manajemen Menu
+FR-MENU-001: Menampilkan Item Menu
+1.	Deskripsi: Sistem harus menampilkan semua item menu dalam tata letak grid
+2.	Input: Data menu dari array JavaScript
+3.	Proses: Membuat elemen HTML secara dinamis
+4.	Output: Kartu menu visual dengan gambar, nama, harga, rating
+5.	Prioritas: TINGGI
+FR-MENU-002: Filter Berdasarkan Kategori
+1.	Deskripsi: Pengguna dapat menyaring menu berdasarkan kategori
+2.	Input: Klik pada tombol filter
+3.	Proses: Menyaring data array dan menampilkan ulang konten
+4.	Output: Item menu yang telah disaring berdasarkan kategori
+5.	Prioritas: TINGGI
+FR-MENU-003: Menampilkan Rating Bintang
+1.	Deskripsi: Menampilkan rating bintang untuk setiap menu
+2.	Input: Nilai rating dari data (1-5)
+3.	Proses: Membuat ikon bintang secara dinamis
+4.	Output: Tampilan visual rating bintang
+5.	Prioritas: SEDANG
+3.1.2 Sistem Reservasi
+FR-RES-001: Form Reservasi Online
+1.	Deskripsi: Form untuk pemesanan meja online
+2.	Input: Input pengguna (nama, email, telepon, tanggal, waktu, jumlah tamu)
+3.	Proses: Validasi form dan penanganan pengiriman
+4.	Output: Pesan konfirmasi dan reset form
+5.	Prioritas: TINGGI
+
+FR-RES-002: Validasi Form
+1.	Deskripsi: Validasi di sisi klien untuk field form
+2.	Input: Data input pengguna
+3.	Proses: Memeriksa field wajib dan format
+4.	Output: Pesan error atau konfirmasi sukses
+5.	Prioritas: TINGGI
+3.1.3 Sistem Testimonial
+FR-TEST-001: Slider Testimonial
+1.	Deskripsi: Menampilkan testimonial dalam format slider
+2.	Input: Data testimonial array
+3.	Proses: Rotasi otomatis setiap 5 detik + navigasi manual
+4.	Output: Kartu testimonial dengan transisi halus
+5.	Prioritas: SEDANG
+FR-TEST-002: Navigasi Manual
+1.	Deskripsi: Pengguna dapat menavigasi testimonial secara manual
+2.	Input: Klik pada titik navigasi
+3.	Proses: Memperbarui posisi slider dan status aktif
+4.	Output: Perubahan testimonial dengan transisi
+5.	Prioritas: RENDAH
+3.1.4 Sistem Navigasi
+FR-NAV-001: Scroll Halus
+1.	Deskripsi: Scroll halus ke section yang dituju
+2.	Input: Klik pada link navigasi
+3.	Proses: Menghitung posisi scroll dengan offset
+4.	Output: Animasi scroll yang halus
+5.	Prioritas: SEDANG
+FR-NAV-002: Navigasi Mobile
+1.	Deskripsi: Menu hamburger untuk perangkat mobile
+2.	Input: Klik pada toggle menu
+3.	Proses: Mengubah class CSS untuk menampilkan/menyembunyikan
+4.	Output: Menu mobile yang responsif
+5.	Prioritas: TINGGI
+3.2 Requirements Non-Fungsional
+3.2.1 Requirements Performa
+NF-PERF-001: Waktu Loading
+1.	Deskripsi: Website harus loading dalam waktu optimal
+2.	Metrik: First Contentful Paint < 2 detik
+3.	Target: Skor Lighthouse Performance > 90
+4.	Prioritas: TINGGI
+NF-PERF-002: Responsivitas
+1.	Deskripsi: Antarmuka harus responsif dan halus
+2.	Metrik: Animasi 60 FPS
+3.	Target: Tidak ada lag pada interaksi
+4.	Prioritas: TINGGI
+3.2.2 Requirements Usabilitas
+NF-USAB-001: Pengalaman Pengguna
+1.	Deskripsi: Antarmuka harus intuitif dan mudah digunakan
+2.	Metrik: Pengguna dapat menyelesaikan tugas tanpa instruksi
+3.	Target: Pola desain yang dapat dipahami sendiri
+4.	Prioritas: TINGGI
+NF-USAB-002: Aksesibilitas
+1.	Deskripsi: Website harus dapat diakses oleh semua pengguna
+2.	Metrik: Kesesuaian dengan WCAG 2.1 Level AA
+3.	Target: Kompatibel dengan screen reader, dapat dinavigasi dengan keyboard
+4.	Prioritas: SEDANG
+
+
+
+3.3 Requirements Teknis
+3.3.1 Teknologi Frontend
+TEKN-FE-001: HTML5
+1.	Elemen HTML semantik
+2.	Input form modern (date, time, email)
+3.	Atribut aksesibilitas
+TEKN-FE-002: CSS3
+1.	Layout CSS Grid dan Flexbox
+2.	CSS Custom Properties (Variabel)
+3.	Transisi dan Transform CSS
+4.	Media Queries untuk responsivitas
+TEKN-FE-003: JavaScript ES6+
+1.	Fitur JavaScript modern
+2.	Manipulasi DOM
+3.	Penanganan Event
+4.	Metode Array (filter, forEach, map)
+4. FITUR SISTEM
+4.1 Fitur Manajemen Menu
+ID Fitur: FM-001
+Deskripsi: Menampilkan menu dinamis dengan kemampuan penyaringan
+Kasus Penggunaan:
+1.	KP-MENU-001: Pengguna melihat semua item menu
+2.	KP-MENU-002: Pengguna menyaring berdasarkan kategori
+3.	KP-MENU-003: Pengguna melihat detail menu
+Aturan Bisnis:
+1.	Item menu diorganisir berdasarkan kategori
+2.	Setiap item harus memiliki gambar, nama, harga, deskripsi
+3.	Sistem rating untuk indikasi kualitas
+
+
+4.2 Fitur Manajemen Reservasi
+ID Fitur: FM-002
+Deskripsi: Sistem reservasi meja online
+Kasus Penggunaan:
+1.	KP-RES-001: Pengguna mengisi form reservasi
+2.	KP-RES-002: Sistem memvalidasi data form
+3.	KP-RES-003: Pengguna menerima konfirmasi
+Aturan Bisnis:
+1.	Semua field wajib diisi kecuali permintaan khusus
+2.	Tanggal harus tanggal mendatang
+3.	Waktu harus dalam jam operasional
+4.3 Fitur Manajemen Testimonial
+ID Fitur: FM-003
+Deskripsi: Menampilkan testimonial pelanggan dengan slider
+Kasus Penggunaan:
+1.	KP-TEST-001: Pengguna melihat testimonial
+2.	KP-TEST-002: Pengguna menavigasi testimonial secara manual
+3.	KP-TEST-003: Sistem memutar testimonial otomatis
+Aturan Bisnis:
+1.	Testimonial ditampilkan dalam urutan acak
+2.	Rotasi otomatis setiap 5 detik
+3.	Navigasi manual tersedia
+5. ANTARMUKA PENGGUNA
+5.1 Navigasi
+1.	Header: Logo dan menu navigasi dengan scroll halus
+2.	Mobile Menu: Menu hamburger yang responsif
+3.	Footer: Informasi kontak dan link cepat
+5.2 Layout Konten
+1.	Hero Section: Gambar utama dengan ajakan bertindak
+2.	Menu Section: Grid layout untuk menampilkan menu
+3.	Reservation Section: Form yang terorganisir rapi
+4.	Testimonial Section: Slider dengan navigasi titik
+5.3 Interaksi
+1.	Hover Effects: Animasi halus pada kartu menu
+2.	Filter Buttons: Feedback visual saat aktif
+3.	Form Validation: Pesan error yang informatif
+4.	Smooth Transitions: Transisi halus antar state
+6. PERFORMANCE DAN KEAMANAN
+6.1 Optimasi Performance
+1.	Loading Time: Konten utama loading dalam 2 detik
+2.	Animasi: Transisi CSS yang dioptimalkan
+3.	Images: Gambar dengan format dan ukuran optimal
+4.	Code: JavaScript dan CSS yang efisien
+6.2 Keamanan
+1.	Validasi Input: Pencegahan input berbahaya
+2.	Data Handling: Tidak menyimpan data sensitif
+3.	XSS Prevention: Sanitasi output yang aman
+7. PENGUJIAN DAN QUALITY ASSURANCE
+7.1 Testing Scope
+1.	Functionality Testing: Semua fitur bekerja sesuai spesifikasi
+2.	Cross-Browser Testing: Kompatibilitas dengan browser utama
+3.	Responsive Testing: Tampilan optimal di berbagai device
+4.	Performance Testing: Memenuhi target performa
+5.	Accessibility Testing: Dapat diakses oleh semua pengguna
+7.2 Acceptance Criteria
+1.	Website loading sempurna di Chrome, Firefox, Safari, Edge
+2.	Semua interaksi berjalan smooth tanpa error
+3.	Form validation bekerja dengan benar
+4.	Tampilan responsif di mobile, tablet, desktop
+5.	Skor Lighthouse di atas 90 untuk performance
+
+
+
+Organisasi Elemen HTML yang Diterapkan
+Semantic HTML Structure
+<img width="811" height="750" alt="image" src="https://github.com/user-attachments/assets/bb805cc3-1a10-47e8-b222-bb3ffeb75f66" />
+
+Penjelasan Implementasi:
+1.	Struktur Berhirarki: Document outline yang jelas dengan header, main, section, footer
+2.	Elemen Semantik: Penggunaan <section>, <article>, <nav>, <header>, <footer>
+3.	ID dan Class Bermakna: Penamaan yang deskriptif (hero-section, menu-grid, reservation-form)
+4.	Accessibility: Alt text untuk images, proper heading hierarchy
+5.	Form Structure: Form elements dengan proper labels dan input types
+Keunggulan Struktur HTML:
+✅ SEO Friendly - Struktur semantik membantu search engine understanding
+✅ Accessibility - Screen reader compatible dengan proper ARIA
+✅ Maintainability - Code yang terorganisir dan mudah dikembangkan
+✅ Cross-browser Compatible - Menggunakan standard HTML5 elements
+
+
+Section Organization
+<img width="940" height="207" alt="image" src="https://github.com/user-attachments/assets/5a3a0e8d-d3ad-4266-b99b-b2973c72faaf" />
+
+1.	About: Cerita dan value proposition
+2.	Menu: Produk utama restoran
+3.	Testimonials: Social proof dan kepercayaan
+4.	Reservation: Conversion point
+5.	Footer: Informasi kontak dan navigasi
+
+Form Structure
+<img width="940" height="226" alt="image" src="https://github.com/user-attachments/assets/7bb7da42-61a6-4a0c-a93c-d8d2a0a904b9" />
+
+1.	Input types yang sesuai (email, tel, date, time)
+2.	required attribute untuk validasi
+3.	Placeholder untuk petunjuk input
+4.	Structured layout dengan CSS Grid
+
+
+
+2. DESAIN CSS (30 Poin)
+Fitur CSS Keren yang di Pake:
+CSS Variables biar Gampang Customize
+<img width="853" height="401" alt="image" src="https://github.com/user-attachments/assets/c3be104b-eb18-4f71-a553-37be9d69ab66" />
+
+Tujuan:
+1.	Konsistensi warna dan styling
+2.	Mudah maintenance dan perubahan
+3.	Design system yang terorganisir
+
+Layout Systems
+
+<img width="799" height="550" alt="image" src="https://github.com/user-attachments/assets/aec57ded-970f-423a-8f22-2235408a4988" />
+
+Penjelasan:
+1.	display: grid → Mengaktifkan CSS Grid layout
+2.	repeat(auto-fill, minmax(280px, 1fr)) →
+o	auto-fill → Browser otomatis mengisi space yang tersedia
+o	minmax(280px, 1fr) → Minimum width 280px, maksimum 1 fraction unit
+o	Hasil: Grid yang responsif, menyesuaikan jumlah kolom berdasarkan lebar container
+3.	gap: 2rem → Jarak antar grid items 2rem
+4.	grid-template-columns: 1fr 1fr → Dua kolom dengan lebar sama
+5.	align-items: center → Vertikal center alignment
+6.	Layout: Gambar dan teks side-by-side di desktop
+7.	auto-fit → Kolom akan menyesuaikan secara otomatis
+8.	minmax(250px, 1fr) → Minimum 250px, fleksibel maksimum
+9.	Hasil: Footer columns yang responsif
+10.	justify-content: space-between → Logo di kiri, menu di kanan
+11.	align-items: center → Vertikal center
+12.	Hasil: Navigation bar yang seimbang
+13.	gap: 1rem → Jarak antar button (modern alternative to margin)
+14.	justify-content: center → Button di tengah
+15.	flex-wrap: wrap → Button akan wrap ke baris baru jika tidak muat
+
+
+Responsive Design Strategy
+<img width="630" height="1029" alt="image" src="https://github.com/user-attachments/assets/5883b7d8-998a-40b6-b488-cf48eccf5251" />
+
+
+Penjelasan 
+1.	width: 90% → Di mobile, container mengambil 90% width
+2.	max-width: 1200px → Di desktop, maksimal 1200px
+3.	margin: 0 auto → Center alignment
+
+4.	@media (max-width: 768px) → Styles berlaku untuk screen ≤ 768px
+5.	Mobile Menu:
+o	position: fixed → Menu menutupi layar
+o	left: -100% → Hidden di luar layar
+o	left: 0 → Visible ketika active
+o	transition → Animasi smooth
+6.	About Section:
+o	grid-template-columns: 1fr → Satu kolom saja
+o	order: -1 → Gambar pindah ke atas
+7.	@media (max-width: 576px) → Styles untuk very small devices
+8.	Typography Adjustment:
+9.	font-size dikurangi untuk readability
+10.	Layout Changes:
+11.	flex-direction: column → Button vertikal
+12.	grid-template-columns: 1fr → Single column layouts
+13.	width: 100% → Full width elements
+
+
+<img width="716" height="421" alt="image" src="https://github.com/user-attachments/assets/bf858dce-a093-4390-842f-be694e732b6b" />
+
+Penjelasan Responsive Images:
+1.	height: 200px → Fixed height untuk konsistensi
+2.	width: 100% → Lebar menyesuaikan container
+3.	object-fit: cover → Gambar tidak distorted, crop jika perlu
+4.	Hasil: Gambar konsisten di semua device sizes
+
+
+
+3. KREATIVITAS DAN DESAIN (20 Poin)
+Elemen Kreatif yang Diterapkan
+Visual Design Elements
+1.	Color Scheme: Kombinasi merah (#e74c3c) sebagai primary dengan dark blue (#2c3e50) sebagai secondary
+2.	Typography: Font hierarchy yang jelas dengan contrast optimal
+3.	Spacing System: Consistent padding, margin, dan gap throughout design
+
+Interactive Components
+<img width="656" height="222" alt="image" src="https://github.com/user-attachments/assets/42a8643c-a418-48fe-b9f1-7a3ccfb7e6f5" />
+<img width="789" height="211" alt="image" src="https://github.com/user-attachments/assets/84bed11c-76b1-4f03-acca-aec1cb3fe788" />
+
+
+Unique Design Features
+1.	Card Lift Animation: Menu items yang "terangkat" saat dihover
+2.	Image Zoom Effect: Gambar makanan yang zoom in halus
+3.	Custom Slider: Testimonial slider buatan sendiri tanpa library
+4.	Gradient Overlays: Hero section dengan gradient overlay untuk readability
+Aesthetic Principles Applied:
+🎨 Visual Hierarchy - Penekanan pada elemen penting
+🎨 Consistency - Design patterns yang konsisten across sections
+🎨 Whitespace - Penggunaan spasi yang optimal untuk readability
+🎨 Micro-interactions - Animasi halus untuk enhanced UX
+
+
+Pejelasan kode Javascript:
+<img width="941" height="262" alt="image" src="https://github.com/user-attachments/assets/7e92ae5b-eb21-497f-b1db-9ed5177908da" />
+
+Penjelasan:
+•	Array of Objects yang menyimpan semua data menu restoran
+•	Setiap item memiliki properti yang konsisten: id, name, category, price, description, image, rating
+•	Kategori digunakan untuk sistem filter: appetizer, main, dessert, drink
+•	Rating berupa angka 1-5 untuk menampilkan bintang
+
+
+Data Testimonials
+<img width="775" height="398" alt="image" src="https://github.com/user-attachments/assets/2660a458-37b2-48ab-bf43-b041aac8be32" />
+
+Penjelasan:
+•	Menyimpan ulasan pelanggan untuk ditampilkan di slider
+•	avatar berisi URL gambar profil pelanggan
+•	rating untuk menampilkan bintang pada testimonial
+
+
+2. SELEKTOR DOM ELEMENTS
+<img width="940" height="251" alt="image" src="https://github.com/user-attachments/assets/a3ab340f-951a-411e-8749-7769ac9d9a97" />
+
+Penjelasan:
+•	Cache DOM elements untuk performa lebih baik
+•	menuGrid - container untuk menampilkan kartu menu
+•	filterBtns - tombol-tombol filter kategori
+•	testimonialTrack - container untuk slider testimonial
+•	sliderNav - container untuk navigasi dots slider
+•	menuToggle - tombol hamburger menu mobile
+•	navLinks - elemen menu navigasi
+
+4. INISIALISASI APLIKASI
+
+<img width="940" height="243" alt="image" src="https://github.com/user-attachments/assets/310455b2-d5be-4039-b77c-fcb306723a60" />
+
+Penjelasan:
+•	Event DOMContentLoaded memastikan kode dijalankan setelah HTML selesai dimuat
+•	renderMenuItems('all') - menampilkan semua menu item awal
+•	renderTestimonials() - membuat slider testimonial
+•	setupEventListeners() - mengatur semua event handlers
+
+
+
+
+6. FUNGSI RENDER MENU ITEMS
+   <img width="940" height="376" alt="image" src="https://github.com/user-attachments/assets/167a5e3d-8106-494f-82d7-64c3cf898e39" />
+
+Penjelasan:
+•	menuGrid.innerHTML = '' - membersihkan konten sebelumnya
+•	Ternary operator memilih antara semua item atau item yang difilter
+•	filter() method untuk menyaring berdasarkan kategori
+•	forEach() loop untuk membuat elemen setiap menu item
+
+SLIDER FUNCTIONALITY
+<img width="991" height="809" alt="image" src="https://github.com/user-attachments/assets/41c01f0f-be75-4694-b65a-eb60ff5c1362" />
+
+Penjelasan:
+•	Manual Navigation: Event listener pada dots untuk mengubah slide
+•	Auto Slide: setInterval() untuk rotasi otomatis setiap 5 detik
+•	% testimonials.length untuk infinite loop
+•	translateX(-${index * 100}%) untuk menggeser track slider
 
 
 
