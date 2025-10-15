@@ -1105,14 +1105,15 @@ Penjelasan:
 
 
 6. FUNGSI RENDER MENU ITEMS
-   
-   <img width="940" height="376" alt="image" src="https://github.com/user-attachments/assets/167a5e3d-8106-494f-82d7-64c3cf898e39" />
+
+ <img width="940" height="376" alt="image" src="https://github.com/user-attachments/assets/167a5e3d-8106-494f-82d7-64c3cf898e39" />
 
 Penjelasan:
 •	menuGrid.innerHTML = '' - membersihkan konten sebelumnya
 •	Ternary operator memilih antara semua item atau item yang difilter
 •	filter() method untuk menyaring berdasarkan kategori
 •	forEach() loop untuk membuat elemen setiap menu item
+
 
 SLIDER FUNCTIONALITY
 
