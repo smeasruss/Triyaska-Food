@@ -54,10 +54,6 @@ o	Buka dengan browser favorit Anda
 
 
 
-
-
-
-
 Langkah-Langkah Deployment ke GitHub Pages
 Step 1: Buat Repository di GitHub
 1.	Login ke GitHub
