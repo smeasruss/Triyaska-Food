@@ -1117,8 +1117,6 @@ Penjelasan:
 
 SLIDER FUNCTIONALITY
 
-<img width="991" height="809" alt="image" src="https://github.com/user-attachments/assets/41c01f0f-be75-4694-b65a-eb60ff5c1362" />
-
 Penjelasan:
 •	Manual Navigation: Event listener pada dots untuk mengubah slide
 •	Auto Slide: setInterval() untuk rotasi otomatis setiap 5 detik
