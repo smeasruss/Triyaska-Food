@@ -995,8 +995,8 @@ o	Hasil: Grid yang responsif, menyesuaikan jumlah kolom berdasarkan lebar contai
 
 
 Responsive Design Strategy
-<img width="630" height="1029" alt="image" src="https://github.com/user-attachments/assets/5883b7d8-998a-40b6-b488-cf48eccf5251" />
 
+<img width="630" height="1029" alt="image" src="https://github.com/user-attachments/assets/5883b7d8-998a-40b6-b488-cf48eccf5251" />
 
 Penjelasan 
 1.	width: 90% → Di mobile, container mengambil 90% width
