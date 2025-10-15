@@ -88,8 +88,7 @@ Step 4: Tunggu dan Akses
 3.	Anda akan melihat link: https://smeasruss.github.io/Triyaska-Food/
 4.	Website sudah online!
 
-
-1. Pendekatan Semantic HTML 
+Pendekatan Semantic HTML 
 Website TriyaskaFood menggunakan HTML5 Semantic Elements secara konsisten untuk 
 menciptakan struktur yang bermakna dan mudah dipahami. Setiap section memiliki tag semantik 
 yang tepat yang tidak hanya membantu dalam styling CSS tetapi juga meningkatkan accessibility dan 
