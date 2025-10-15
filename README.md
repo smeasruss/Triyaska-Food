@@ -1039,7 +1039,9 @@ Visual Design Elements
 3.	Spacing System: Consistent padding, margin, dan gap throughout design
 
 Interactive Components
+
 <img width="656" height="222" alt="image" src="https://github.com/user-attachments/assets/42a8643c-a418-48fe-b9f1-7a3ccfb7e6f5" />
+
 <img width="789" height="211" alt="image" src="https://github.com/user-attachments/assets/84bed11c-76b1-4f03-acca-aec1cb3fe788" />
 
 
@@ -1056,6 +1058,7 @@ Aesthetic Principles Applied:
 
 
 Pejelasan kode Javascript:
+
 <img width="941" height="262" alt="image" src="https://github.com/user-attachments/assets/7e92ae5b-eb21-497f-b1db-9ed5177908da" />
 
 Penjelasan:
@@ -1066,6 +1069,7 @@ Penjelasan:
 
 
 Data Testimonials
+
 <img width="775" height="398" alt="image" src="https://github.com/user-attachments/assets/2660a458-37b2-48ab-bf43-b041aac8be32" />
 
 Penjelasan:
@@ -1075,6 +1079,7 @@ Penjelasan:
 
 
 2. SELEKTOR DOM ELEMENTS
+   
 <img width="940" height="251" alt="image" src="https://github.com/user-attachments/assets/a3ab340f-951a-411e-8749-7769ac9d9a97" />
 
 Penjelasan:
@@ -1100,6 +1105,7 @@ Penjelasan:
 
 
 6. FUNGSI RENDER MENU ITEMS
+   
    <img width="940" height="376" alt="image" src="https://github.com/user-attachments/assets/167a5e3d-8106-494f-82d7-64c3cf898e39" />
 
 Penjelasan:
@@ -1109,6 +1115,7 @@ Penjelasan:
 •	forEach() loop untuk membuat elemen setiap menu item
 
 SLIDER FUNCTIONALITY
+
 <img width="991" height="809" alt="image" src="https://github.com/user-attachments/assets/41c01f0f-be75-4694-b65a-eb60ff5c1362" />
 
 Penjelasan:
