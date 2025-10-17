@@ -7,7 +7,7 @@ Website restoran modern yang dibangun dengan **HTML5, CSS3, dan JavaScript vanil
 
 🌐 Live Demo
 
-Website dapat diakses di: https://smeasruss.github.io/Triyaska-Food/
+Website dapat diakses di:  https://tirussmeass.github.io/Triyaska-Food/
 🚀 Cara Menjalankan Website
 
 Opsi 1: Langsung di Browser (Recommended)
